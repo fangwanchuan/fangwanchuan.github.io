@@ -1,0 +1,173 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=960">
+<title>SIDNet</title>
+<link rel="stylesheet" type="text/css" href="css/site.20180920212709.css">
+<!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css" href="css/site.20180920212709-lteIE7.css">
+<![endif]-->
+</head>
+<body id="body">
+<div class="pos vis section">
+<div class="vis-2 pos-2 size cont">
+<p class="para"><span class="font">SIDNet: A Single Image Dedusting Network with Color Cast Correction</span></p>
+</div>
+<div class="vis-2 pos-3 size-2 cont-2">
+<div class="vis-2 pos-4 size-3 cont-3">
+<p class="para-2"><span class="font-2">Jiayan Huang*</a></span></p>
+</div>
+<div class="vis-2 pos-5 size-3 cont-4">
+<p class="para-2"><span class="font-2">Haiping Xuc *</a></span></p>
+</div>
+<div class="vis-2 pos-6 size-3 cont-5">
+<p class="para-2"><span class="font-2">Guanghai Liu *</a></span></p>
+</div>
+<div class="vis-2 pos-7 size-3 cont-6">
+<p class="para-2"><span class="font-2">Chuansheng Wang *</a></span></p>
+</div>
+</div>
+<div class="vis-2 pos-8 size-4 cont-7">
+<p class="para-2"><span class="font-3">Signal Processing
+Volume 199, October 2022, 108612</span><span class="font-3"> | </span><span class="font-4"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0165168422001529">arXiv</a></span></p>
+<p class="para-2"><span class="font-4"><a target="_blank" href="https://www.sciencedirect.com/science/article/abs/pii/S0165168422001529">Paper</a></span><span class="font-3"> | </span><span class="font-4"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0165168422001529">Supplementary</a></span><span class="font-3"> | </span><span class="font-4"><a href="http://www.icst.pku.edu.cn/struct/Seminar/Talk_BMVC18_Chenwei/index.html">PPT</a></span><span class="font-3">  </span><span class="font-4"></a></span></p>
+<p class="para-3"><span class="font-5">* indicates equal contributions.</span></p>
+</div>
+<div class="vis-2 pos-9 size-5 cont-2">
+<div class="vis-2 pos-4 size-5 colwrapper">
+<div class="vis-2 pos-4 size-6 cont-8">
+<picture class="img-2">
+<source srcset="images/1.png 1x, images/1.png 2x">
+<img src="images/1.png" alt="" class="js img">
+</picture>
+</div>
+<div class="vis-2 pos-13 size-10 cont">
+<p class="para-4"><span class="font-3">Figure 1:  Network structure of the proposed SIDNet.</span></p>
+</div>
+</div>
+</div>
+<div class="vis-2 pos-23 size-8 cont">
+<p class="para-5"><span class="font-6">Abstract</span></p>
+<p class="para-4"><span class="font-3">Dust degrades image content and causes image color cast, which negatively impacts on many high-level computer
+vision tasks. In this paper, we proposed a dedusting network with color cast correction for a single dusty image (SIDNet). The SIDNet contains several dust-aware representation extraction (DustAre) modules with the same structure.
+Each DustAre module contains two branches. The first branch encodes the input to estimate global veiling-light and
+local spatial information. The second branch generates a dust-aware map and fuses the global veiling-light, the local
+spatial information and the dust-aware map to generate the output. To further improve real dusty image dedusting
+performance, the SIDNet introduces a color cast correction scheme to our neural network. After considering that the
+average chromaticity values of a dusty image in CIELAB color space are usually larger than those of a clear image,
+the SIDNet defines a new loss function to better guide the network training. Additionally, we also construct a new
+synthetic dusty image dataset for network training, which additionally considers the scene depth relationship between
+real dusty image and dust-free image. Experiments on synthetic and real dusty images show that the SIDNet achieves
+better dedusting performance compared to state-of-the-art image restoration methods.</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-5"><span class="font-6">Subjective Results</span><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">From Fig. 2, it can be observed that the outdoor image dedusting results obtained by the proposed SIDNet are close to the ground-truth (i.e., dust-free images). HardGAN and FFNet obtain better dedusting
+performances than other reference methods. AODNet
+fails to remove dust for certain scenes. LPNet, RGNet
+and FFANet cause different degrees of color distortions.
+Wang et al. correct dusty image color. However, their
+dedusting results show low color saturation.</span></p>
+</div>
+<div class="vis-2 pos-11 size-9 cont">
+<picture class="img-4">
+<source srcset="images/2.png 1x, images/2.png 2x">
+<img src="images/2.png" alt="" class="js-2 img-3">
+</picture>
+</div>
+<div class="vis-2 pos-22 size-10 cont">
+<p class="para-4"><span class="font-3">Figure 2: Visual image dedusting results of different methods on outdoor synthetic dusty images.</span></p>
+</div>
+<div class="vis-2 pos-14 size-11 cont">
+<p class="para-4"><span class="font-3">To further validate image dedusting performance, we
+trained eight methods on synthetic dusty images and
+tested them on several real dusty images.</span></p>
+</div>
+<div class="vis-2 pos-30 size-12 cont">
+<picture class="img-4">
+<source srcset="images/3.png 1x, images/3.png 2x">
+<img src="images/3.png"  alt="" class="js-3 img-5">
+</picture>
+</div>
+<div class="vis-2 pos-11 size-8 cont">
+<p class="para-5"><span class="font-6"></span></p>
+<div class="vis-2 pos-13 size-7 cont">
+<p class="para-5"><span class="font-6"></span></p>
+</div>
+<div class="vis-2 pos-22 size-31 cont">
+<p class="para-4"><span class="font-3">Figure 3:   Visual image dedusting results of different methods on real dusty images.</span></p>
+</div>
+<div class="vis-2 pos-24 size-25 cont">
+<p class="para-4"><span class="font-3">Motivated by the observation that a dusty image usually has larger a∗
+and b∗
+average chromaticity values
+in CIELAB color space than that of a dust-free image,
+the SIDNet designs a new loss item Lab in Eq. (18).
+To validate the impact of Lab on the dedusting results,
+we followed the quantitative setting of 10 times difference in [32], and trained SIDNet with λab as 0, 3×10−3, 3 × 10−2
+, 3 × 10−1
+and 3, respectively. Then, all models were evaluated on 20 real dusty images.</span></p>
+</div>
+<div class="vis-2 pos-24 size-12 cont">
+<picture class="img-4">
+<source srcset="images/4.png 1x, images/4.png 2x">
+<img src="images/4.png"  alt="" class="js-3 img-5">
+</picture>
+</div>
+<div class="vis-2 pos-11 size-8 cont">
+<p class="para-5"><span class="font-6"></span></p>
+<div class="vis-2 pos-13 size-7 cont">
+<p class="para-5"><span class="font-6"></span></p>
+</div>
+<div class="vis-2 pos-25 size-11 cont-11">
+<p class="para-4"><span class="font-3">Figure 4:   Visual image dedusting results of different methods on real dusty images.</span></p>
+</div>
+</div>
+</div>
+<div class="vis-2 pos-14 size-11 cont-12">
+<p class="para-4"><span class="font-3">See </span><span class="font-4"><a href="https://github.com/daooshee/BMVC2018website/blob/master/chen_bmvc18_sup.pdf">supplementary</a></span><span class="font-3"> for more results.</span></p>
+</div>
+<div class="vis-2 pos-14 size-16 cont-13">
+<p class="para-5"><span class="font-6">Download Links</span><span class="font-3">&nbsp;</span></p>
+<ul class="pos-21">
+<li class="para-6"><span class="font-7">&bull; </span><span class="font-7">Datasets</span></li>
+</ul>
+<p class="para-4"><span class="font-3">&nbsp;&nbsp;&nbsp;&nbsp;Dusty paired dataset (600 pairs): </span><span class="font-4"><a href="https://drive.google.com/open?id=157bjO1_cFuSd0HWDUuAmcHRJDVyWpOxB">Google Drive</a></span><span class="font-3">, </span><span class="font-4"><a href="https://pan.baidu.com/s/1ABMrDjBTeHIJGlOFIeP1IQ">Baidu Pan (Code:acp3)</a></span></p>
+<p class="para-4"><span class="font-3">&nbsp;&nbsp;&nbsp;&nbsp;Synthetic Image Pairs from Raw Images: </span><span class="font-4"><a href="https://drive.google.com/open?id=1G6fi9Kiu7CDnW2Sh7UQ5ikvScRv8Q14F">Google Drive</a></span><span class="font-3">, </span><span class="font-4"><a href="https://pan.baidu.com/s/1drsMAkRMlwd9vObAM_9Iog">Baidu Pan</a></span></p>
+<p class="para-4"><span class="font-3">&nbsp;&nbsp;&nbsp;&nbsp;Testing Images: </span><span class="font-4"><a href="https://drive.google.com/open?id=1OvHuzPBZRBMDWV5AKI-TtIxPCYY8EW70">Google Drive</a></span><span class="font-3">, </span><span class="font-4"><a href="https://pan.baidu.com/s/1G2qg3oS12MmP8_dFlVRRug">Baidu Pan</a></span></p>
+<ul class="pos-21">
+<li class="para-6"><span class="font-7">&bull; </span><span class="font-7">Codes</span></li>
+</ul>
+<p class="para-4"><span class="font-3">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="font-4"><a href="https://github.com/weichen582/RetinexNet">Github</a></span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-5"><span class="font-6">Citation</span></p>
+<p class="para-7"><span class="font-3">@HUANG2022108612,</span></p>
+<p class="para-7"><span class="font-3">&nbsp;&nbsp;title={SIDNet: A single image dedusting network with color cast correcti},</span></p>
+<p class="para-7"><span class="font-3">&nbsp;&nbsp;author={Jiayan Huang and Haiping Xu and Guanghai Liu and Chuansheng Wang and Zhongyi Hu and Zuoyong Li},</span></p>
+<p class="para-7"><span class="font-3">&nbsp;&nbsp;journal={Signal Processing},</span></p>
+<p class="para-7"><span class="font-3">&nbsp;&nbsp;year={2022},</span></p>
+<p class="para-7"><span class="font-3">}</span><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-5"><span class="font-6">Reference</span></p>
+<p class="para-4"><span class="font-3">[1] G. Liu, J. Yang, Deep-seated features histogram: a novel image
+retrieval method, Pattern Recognition 116 (2021) 107926.</span></p>
+<p class="para-4"><span class="font-3">[2] Y. Zheng, J. Fan, J. Zhang, X.-B. Gao, Exploiting related and
+unrelated tasks for hierarchical metric learning and image classification, IEEE Transactions on Image Processing 29 (1) (2020)
+883–896.</span></p>
+<p class="para-4"><span class="font-3">[3]G. Liu, J. Yang, Exploiting color volume and color difference
+for salient region detection, IEEE Transactions on Image Processing 28 (1) (2019) 6–16.</span></p>
+<p class="para-4"><span class="font-3">[4] J. Wang, Y. Pang, Y. He, C. Liu, Enhancement for dust-sand
+storm images, International Conference on Multimedia Modeling (2016) 842–849.</span></p>
+<p class="para-4"><span class="font-3">[5]G. Gao, H. Lai, Z. Jia, Y. Liu, Y. Wang, Sand-dust image restoration based on reversing the blue channel prior, IEEE Photonics
+Journal 12 (2) (2020) 1–16.</span><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">[6]  C. Wang, Z. Li, J. Wu, H. Fan, G. Xiao, H. Zhang, Deep residual
+haze network for image dehazing and deraining, IEEE Access 8
+(2020) 9488–9500.</span></p>
+</div>
+</div>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/index.20180920212709.js"></script>
+<script type="text/javascript">
+var ver=RegExp(/Mozilla\/5\.0 \(Linux; .; Android ([\d.]+)/).exec(navigator.userAgent);if(ver&&parseFloat(ver[1])<5){document.getElementsByTagName('body')[0].className+=' whitespacefix';}
+</script>
+</body>
+</html>
